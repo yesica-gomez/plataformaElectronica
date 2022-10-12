@@ -1,4 +1,4 @@
-import os 
+import os
 from . import dbc
 
 from flask import Flask
