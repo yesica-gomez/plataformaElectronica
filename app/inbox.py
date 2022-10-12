@@ -34,7 +34,7 @@ def send():
         body = request.form["body"]
 
         db = get_db()
-       
+    
         if not to_username:
             flash('To field is required')
             return render_template('inbox/send.html')
@@ -56,7 +56,7 @@ def send():
         
         if userto is None:
             error = 'Recipient does not exist'
-     
+
         if error is not None:
             flash(error)
         else:

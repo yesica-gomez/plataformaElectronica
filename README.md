@@ -1,5 +1,11 @@
 # Demo Flask
-
+## se creó el entorno virtual 
+1. pyenv virtualenv 3.10.4 msjelectronica
+2. pyenv local proyecto
+3. pip install flask
+4. pip install -r requirements.txt (Para esto se cambió en el requirements.txt el MarkupSafe==2.0.1 a       MarkupSafe==2.1.1 y se borró la linea siguiente de pkg-resourses==0.0.0)
+5. flask init-db
+6. flask run
 ## Dependencies
 To install the required dependencies, please follow these steps:
 

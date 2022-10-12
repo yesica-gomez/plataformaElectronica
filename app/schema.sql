@@ -22,7 +22,7 @@ CREATE TABLE forgotlink (
   FOREIGN KEY (userid) REFERENCES user (id)
 );
 
-CREATE TABLE activationlink (
+CREATE TABLE activationlink ( 
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   challenge TEXT not Null,
   created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -52,4 +52,4 @@ CREATE TABLE credentials(
   password TEXT NOT NULL
 );
 
-INSERT INTO credentials (name,user,password) VALUES ('EMAIL_APP','ahhernandez@uninorte.edu.co', 'jojija34');
+INSERT INTO credentials (name,user,password) VALUES ('EMAIL_APP','ybetancurt@uninorte.edu.co', 'Temporal2022.');

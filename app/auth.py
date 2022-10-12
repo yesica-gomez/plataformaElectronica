@@ -186,7 +186,8 @@ def change():
             
             db = get_db()
             attempt = db.execute(
-                "select * from forgotlink where challenge=? and state =? and CURRENT_TIMESTAMP between created and validuntil", (number, utils.F_ACTIVE)#Challenge es el link generado para recuperacion de contraseña
+                "select * from forgotlink where challenge=? and state =? and CURRENT_TIMESTAMP between created and validuntil", (number, utils.F_ACTIVE)
+                #Challenge es el link generado para recuperacion de contraseña
             ).fetchone()
             
             if attempt is not None:
